@@ -21,7 +21,7 @@
             <a class="nav-link col-sm-12 text-center d-lg-none border-bottom border-info" href="#">MI CUENTA</a>
           </li>
           <li class="nav-item px-3">
-            <a class="nav-link" href="#"><mat-icon style="font-size: 36px;" class="coloricono d-none d-lg-block pl-5">shopping_cart</mat-icon></a>
+            <a class="nav-link" href="#"><mat-icon style="font-size: 36px;" data-toggle="modal" data-target="#exampleModal" class="coloricono d-none d-lg-block pl-5">shopping_cart</mat-icon></a>
             <a class="nav-link col-sm-12 text-center d-lg-none  mt-n3 border-bottom border-info" href="#">CARRITO</a>
           </li>
           <li class="nav-item px-3">
@@ -37,13 +37,13 @@
             <a class="nav-link col-sm-12 text-center d-lg-none" href="#">
               <div class="row">
                 <div class="col-4">
-                  <img src="/assets/images/instagram.png" class="">
+                  <a href=""><img src="/assets/images/instagram.png" class=""></a>
                 </div>
                 <div class="col-4">
-                  <img src="/assets/images/instagram.png" class="">
+                  <a href="https://wa.me/526641266149"><img src="/assets/images/whatsapp.png" class=""></a>
                 </div>
                 <div class="col-4">
-                  <img src="/assets/images/instagram.png" class="">
+                  <a href=""><img src="/assets/images/facebook.png" class=""></a>
                 </div>
               </div>
             </a>
@@ -51,4 +51,49 @@
         </ul>
       </div>
     </div>
-    </nav>
+</nav>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title coloricono" id="exampleModalLabel">¿CÓMO PAGAR?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Las formas de pago disponibles son: 
+        <br>
+        Tarjeta: <br>
+        SPEI: <br>
+        Comunicarse al numero: una vez realizado el pago.
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-lg btn-block fondoboton" data-dismiss="modal"><h5 class="py-1">ENTENDIDO</h5></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade right fondo" id="disclaimer" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
+      <div class="modal-content-full-width modal-content ">
+        <div class="modal-body">
+          <div class="mt-5 pt-5"></div>
+          <div class="mt-5 pt-5">
+            <h1 class="section-heading text-center wow fadeIn my-5 pt-3 coloricono d-none d-lg-block">¿ERES MAYOR DE EDAD?</h1>
+            <h3 class="section-heading text-center wow fadeIn my-5 pt-3 coloricono d-sm-none">¿ERES MAYOR DE EDAD?</h3>
+            <div class="row">
+              <div class="col-6">
+                <button type="button" class="btn btn-primary btn-md btn-rounded float-right botones fondoboton" data-dismiss="modal">SI</button>
+              </div>
+              <div class="col-6">
+                <a class="btn btn-danger btn-md btn-rounded botones" href="https://www.google.com/" role="button"><p style="margin-top:7px;">NO</p></a>
+              </div>       
+            </div>  
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
