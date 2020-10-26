@@ -12,7 +12,7 @@
 }
 
 .content-wrapper {
-  margin-top: 65px;
+  padding-top: 50px;
   flex-grow: 1;
   overflow-y: auto;
   overflow-x: hidden;
